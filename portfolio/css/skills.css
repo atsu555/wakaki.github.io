@@ -1,0 +1,71 @@
+#skill{
+    padding-top: 10rem;
+    background-color: #F1F1F1;
+    color:  #382F27;
+}
+.skill-html, .skill-php, .skill-frame, .skill-design{
+    display: flex;
+    padding: 2rem 0;
+}
+.skill-box{
+    padding: 3rem;
+}
+.skill-text h1{
+    padding-bottom: 1rem;
+    font-size: 70px;
+}
+.skill-title h2{
+    font-size: 50px;
+}
+.skill-text p{
+    font-size: 1.2rem;
+}
+.skill-title{
+    padding-bottom: 2rem;
+}
+.skill-menu{
+    text-align: center;
+}
+.skill-menu h3{
+    padding: 1rem;
+}
+.skill-menu p{
+    padding: 1rem;
+}
+.img-html{
+    height: 300px;
+}
+
+@media screen and (max-width: 768px){
+    .skill-text h1{
+        font-size: 50px;
+    }
+    .skill-text p{
+        font-size: 1rem;
+    }
+    .skill-title h2{
+        font-size: 40px;
+    };
+    .skill-menu img{
+        height: 250px;
+    }
+    .skill-menu p{
+        text-align: left;
+    }
+    br{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .skill-menu img{
+        height: 200px;
+    }
+    .skill-title{
+        text-align: center;
+    }
+    .skill-menu p{
+        font-size: 0.8rem;;
+    }
+}
+
+

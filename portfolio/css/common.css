@@ -1,0 +1,273 @@
+body{
+    font-family: 'Noto Serif JP', serif;
+}
+button{
+    border: none;
+    background: none;
+}
+ul{
+    list-style: none;
+}
+
+/* パディングを適用 */
+.pd-1{
+    padding: 1rem;
+}
+.pd-2{
+    padding: 2rem;
+}
+.pd-3{
+    padding: 3rem;
+}
+.marin-auto{
+    margin: 0;
+}
+
+.img-80{
+    width: 80%;
+}
+.img-60{
+    width: 60%;
+}
+.img-50{
+    width: 50%;
+}
+.img-400{
+    width: 400px;
+}
+
+/* header */
+.header-box {
+    background-color: #382F27;
+    background-size: contain;
+    padding: 20px 80px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0.9;
+    box-shadow: 0px 3px 2px #382F27;
+}
+.header-text{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.header-text h1{
+    font-size: 60px;
+}
+.header-text ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+}
+.header-text a{
+    color: #fff;
+    text-decoration: none;
+}
+.header-text a{
+    color: #fff;
+}
+.header-text a:hover{
+    text-decoration: none;
+}
+.menumargin{
+    margin-left: 90px;
+}
+
+.main-img{
+    width: 100%;
+}
+/* hamburgerbutton */
+.hamburger_btn {
+    position: fixed;
+    top: 2.5rem;
+    right: 0;
+    width: 70px;
+    height: 72px;
+    cursor: pointer;
+    z-index: 50;
+}
+.hamburger_btn ul{
+    display: column;
+}
+.hamburger_btn .line {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    text-align: center;
+}
+
+.hamburger_btn .line_01 {
+    top: 16px;
+    transition: 0.4s ease;
+}
+.hamburger_btn .line_02 {
+    top: 26px;
+    transition: 0.4s ease;
+}
+.hamburger_btn .line_03 {
+    top: 36px;
+    transition: 0.4s ease;
+}
+
+
+.btn_line01 {
+    transform: translateY(10px) rotate(-45deg);
+    transition: 0.4s ease;
+}
+.btn_line02 {
+    transition: 0.4s ease;
+    opacity: 0;
+}
+.btn_line03 {
+    transform: translateY(-10px) rotate(45deg);
+    transition: 0.4s ease;
+}
+
+
+/*サイドメニュー*/
+.menu-enter-active, .menu-leave-active {
+    transition: opacity 0.4s;
+}
+.menu-enter, .menu-leave-to {
+    opacity: 0;
+}
+
+.menu li {
+    list-style: none;
+    line-height: 1;
+    padding: 1rem;
+}
+.menu {
+    background-color: rgba(197, 197, 197, 0.6);
+    z-index: 30;
+    padding: 2rem 1rem;
+    position: fixed;
+    width: 20rem;
+    height: 80rem;
+    top: 0;
+    right: 0;
+}
+.menu a {
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0 2rem;
+}
+.menu ul{
+    margin: 1rem;
+    padding: 0;
+}
+
+/* footer */
+footer{
+    background-color: #382F27;
+    color: #fff;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 2rem 0;
+}
+footer li{
+    padding: 0 2rem;
+}
+footer a{
+    color: #fff;
+}
+.footer-left{
+    border-left: solid 1px #fff;
+}
+footer a:hover{
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        background-size: cover;
+    }
+    .img-80{
+        width: 80%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .flex-nowrap{
+        flex-wrap: wrap!important;
+    }
+    .header-box {
+        background-color: #382F27;
+        background-size: contain;
+        padding: 20px 40px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        z-index: 1000;
+        opacity: 0.9;
+        /* box-shadow: 0px 4px 5px #382F27; */
+    }
+    .header-text ul{
+        display: none;
+    }
+    .header-text h1{
+        font-size: 1.5rem;
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu ul{
+        display: block;
+        text-align: center;
+    }
+    .hamburger_btn {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70px;
+        height: 72px;
+        cursor: pointer;
+        z-index: 50;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .img-100{
+        width: 100%;
+    }
+    .header-box {
+        padding: 1rem 2rem 0;
+    }
+    .header-box h1{
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+    }
+    footer ul{
+        padding: 1rem 0;
+    }
+    footer li{
+        font-size: 0.5rem;
+        padding: 0 5px;
+    }
+}

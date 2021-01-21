@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* ユーティリティ設定 */
+.pad-0{
+    padding: 0;
+}
+.pad-1{
+    padding: 1rem 0;
+}
+.pad-2{
+    padding: 2rem 0;
+}
+.pad-3{
+    padding: 3rem 0;
+}
+/* 画像の大きさ設定 */
+.img-60{
+    width: 60%;
+}
+.img-100{
+    width: 100%;
+}
+.img-h-100{
+    height: 100%;
+}
+/* フォントのカラー設定 */
+.font-blue{
+    color: #2894ad;
+}
+
+.border{
+    border: solid 1px #000;
+}
+
+
+header{
+    background: url(../images/headbackground.png);
+}
+.leftimg{
+    padding: 2rem;
+}
+.rightimg{
+    padding: 2rem 2rem 0 0;
+}
+.campaignwindow{
+    margin-top: -90px;
+}
+.yellow-area{
+    background-color: #ecd860;
+    padding: 2rem 0;
+}
+.yellow-area h1{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.l-font{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.smartwindow{
+    padding: 2rem 0;
+}
+
+/* 店情報 */
+#shopinfo{
+    background: url(../images/dentalentrance.png);
+    background-size: cover;
+    height: 300px;
+}
+.button-box button{
+    background-color: #ecd860;
+    padding: 1rem 1.5rem;
+    border: none;
+}
+.shoplist ul{
+    list-style: none;
+}
+.shoplist li{
+    color: #fff;
+}
+.shopbox{
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.backcolor{
+    
+}
+.telnumber{
+    font-size: 2rem;
+}
+
+/* お悩み */
+#worries{
+    margin: 1rem 0;
+}
+#worries h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.worry-list{
+    padding: 1rem 1rem 0 0;
+}
+.worry-list ul{ 
+    text-align: left;
+    list-style: none;
+}
+.worry-list i{
+    color: #656565;
+    padding: 0.5rem;
+}
+.worry-list li{
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted #999;
+    font-weight: 600;
+}
+.worry-img{
+    padding: 1rem;
+}
+
+
+.bluebox{
+    display: flex;
+    align-items: center;
+    background-color: #0b839a;
+    padding: 3rem;
+}
+.bluebox h2, .bluebox p{
+    color: #fff;
+}
+.bluebox p{
+    padding-top: 1rem;
+}
+.textbox{
+    flex-direction: column;
+}
+
+
+
+.ticket{
+    padding-top: 0.7rem;
+}
+
+@media screen and (max-width:768px){
+    .shoplist ul {
+        text-align: center;
+        padding: 0;
+    }
+    .worry-img{
+        text-align: center;
+        padding: 1.2rem;
+    }
+    .sp-br{
+        display: none;
+    }
+    .textbox p{
+        font-size: 0.8rem;
+    }
+}

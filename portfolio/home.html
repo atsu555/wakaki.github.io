@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <div class="header-box">
+        <div class="header-text">
+          <a href="home.html">
+            <h1>Portforio</h1>
+          </a>
+          <ul>
+            <li><a href="skills.html">スキル</a></li>
+            <li class="menumargin"><a href="works.html">制作物</a></li>
+            <li class="menumargin"><a href="profile.html">プロフィール</a></li>
+          </ul>
+        </div>
+       <!-- hamburger_btn -->
+        <div id="app">
+          <div class="hamburger_btn" v-on:click='ActiveBtn=!ActiveBtn'>
+            <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span>
+            <span class="line line_02" v-bind:class="{'btn_line02':ActiveBtn}"></span>
+            <span class="line line_03" v-bind:class="{'btn_line03':ActiveBtn}"></span>
+          </div>
+          <!--サイドメニュー-->
+          <transition name="menu">
+            <div class="menu" v-show="ActiveBtn">
+                <ul>
+                    <li><a href="skills.html">スキル</a></li>
+                    <li><a href="works.html">制作物</a></li>
+                    <li><a href="profile.html">プロフィール</a></li>
+                </ul>
+            </div>
+        </transition>
+        </div>
+      </div>
+      <img src="images/mybikeshadow.jpg" alt="バイク" class="main-img">
+    </header>
+
+    <!-- プロフィール -->
+    <section id="profile">
+      <div class="container">
+        <div class="row profile-box">
+          <div class="col-md">
+            <img src="images/mypicture1.png" alt="橘川" class="img-fluid">
+          </div>
+          <div class="col-md profile-text">
+            <div>
+              <h1>About | Kikkawa Atsutaka</h1>
+              <p>
+                1998年生まれ | WEBコーダー・デザイナー志望
+              </p>
+              <p>
+                2018年3月に一般曹候補生として航空自衛隊に入隊。
+                職種は調達職種で主に防衛装備品の契約の締結を主に行なっていた。
+                2020年12月に航空自衛隊を退職。
+              </p>
+              <p>
+                現在はプログラミング学習をしながら、就職活動中。
+              </p>
+              <div>
+                <button onclick="location.href='profile.html'">see more profile</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- works -->
+    <section id="works">
+      <div class="container">
+        <div>
+          <h1><a href="works.html">Works</a></h1>
+        </div>
+        <div class="works-item">
+          <div class="banner">
+            <h2>Banner</h2>
+            <img src="images/banner-estate.jpg" alt="不動産" class="img-400 img-100">
+          </div>
+          <div class="lp">
+            <h2>Landing Page</h2>
+            <img src="images/schoolLP.jpg" alt="スクール" class="img-400 img-100">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-box">
+        <div class="footer-text">
+          <ul class="footer-flex">
+            <li><a href="index.html">ホーム</a></li>
+            <li class="footer-left"><a href="skills.html">スキル</a></li>
+            <li class="footer-left"><a href="works.html">制作物</a></li>
+            <li class="footer-left"><a href="profile.html">プロフィール</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="js/button.js"></script>
+  </body>
+</html>

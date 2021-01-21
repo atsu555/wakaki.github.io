@@ -1,0 +1,89 @@
+#works{
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    background-color: #F1F1F1;
+    color:  #382F27;
+}
+#works h1{
+    margin-bottom: 3rem;
+    font-size: 2.7rem;
+}
+
+.banner-box, .lp-box{
+    padding: 2rem 0;
+    margin-left: 10rem;
+}
+.banner-box h2, .lp-box h2{
+    font-size: 2.3rem;
+    padding: 1rem;
+    text-align: left;
+    margin-top: -4.5rem;
+}
+.banner-box a, .lp-box a{
+    color: #382F27;
+}
+.banner-box a:hover, .lp-box a:hover{
+    background-color: #fff;
+    opacity: 0.6;
+}
+.banner-text p, .lp-text p{
+    padding: 1rem;
+    text-align: left;
+}
+
+.banner-recruit{
+    margin: 3rem;
+}
+.banner-estate{
+    margin: 3rem;
+}
+
+
+
+
+
+#lp{
+    color: #382F27;
+    text-align: center;
+    padding-top: 3rem;
+}
+.lp-img{
+    padding-bottom: 5rem;
+    margin: 2rem;
+}
+.lp-box, .banner-box{
+    background-color: #cbdce5;
+    padding: 2rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+@media screen and (max-width: 500px){
+    #works h1{
+        margin-bottom: 2rem;
+        font-size: 2.3rem;
+    }
+    .banner-box h2, .lp-box h2{
+        font-size: 1.8rem;
+        padding: 0.8rem;
+        margin-top: -4.2rem;
+    }
+    .banner-text p, .lp-text p{
+        padding: 0.5rem;
+        text-align: left;
+    }
+    .banner-recruit{
+        margin: 1.5rem;
+    }
+    .banner-estate{
+        margin: 1.5rem;
+    }
+    .lp-img{
+        padding-bottom: 2rem;
+        margin: 1rem;
+    }
+    .lp-box, .banner-box{
+        padding: 1rem;
+        margin: 3rem 0;
+    }
+}

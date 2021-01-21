@@ -1,0 +1,109 @@
+#my-data{
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+    color:  #382F27;
+}
+.profile-box h1{
+    margin-left: 5rem;
+}
+.profile-img{
+    background-image: url(../images/profile-mainimg.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.profile-img ul{
+    padding: 15rem 0;
+    font-size: 1.2rem;
+    margin-left: 5rem;
+}
+.profile-img li{
+    padding: 1rem;
+}
+
+/* career */
+.career-area, .hobby-area, .motiva-area{
+    background-color: #F1F1F1;
+    margin-top: 2rem;
+    box-shadow: 10px 8px 7px #00000029;
+}
+.career-box, .hobby-box, .motiva-box{
+    padding: 1rem;
+}
+.career-box h2, .hobby-box h2, .motiva-box h2{
+    padding: 1rem 0;
+}
+.career-box tr{
+    line-height: 3;
+}
+.career-table{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+.hobby-menu{
+    padding: 1rem;
+}
+.hobby-menu p{
+    font-size: 1.2rem;
+}
+.hobby-text{
+    padding: 1rem 0;
+}
+.hobby-text p{
+    padding: 0 1rem;
+}
+
+.motiva-box p{
+    padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 768px){
+    #my-data{
+        padding-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .profile-img ul{
+        padding: 8rem 0;
+        font-size: 1rem;
+        margin-left: 5rem;
+    }
+    .career-table{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .profile-img{
+        background-image: url(../images/profile-mainimg.png);
+        background-size: 70%;
+        background-repeat: no-repeat;
+    }
+    .profile-box h1{
+        margin-left: 1.5rem;
+    }
+    .profile-img ul{
+        padding: 3rem 0;
+        font-size: 0.6rem;
+        margin-left: 1.5rem;
+    }
+    .profile-img li{
+        padding: 0.5rem;
+    }
+    .career-area, .hobby-area, .motiva-area{
+        width: 80%;
+    }
+    .career-table{
+        padding: 0.5rem 0;
+        font-size: 0.5rem;
+    }
+    .career-box, .hobby-box, .motiva-box{
+        padding: 0;
+    }
+    .career-box h2, .hobby-box h2, .motiva-box h2{
+        padding: 0.5rem 0;
+    }
+    .hobby-menu p{
+        font-size: 1rem;
+    }
+}
